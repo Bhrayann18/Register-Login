@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Inicio</title>
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link th:href="@{/css/Menu_style_User.css}" rel="stylesheet" />
+	<link th:href="@{/css/Menu_style.css}" rel="stylesheet" />
+	<link th:href="@{/css/bootstrap.css}" rel="stylesheet" />
+</head>
+<main>
+
+	<body>
+		<div class="sidebar">
+			<div class="logo-details">
+				<img id="destacada" th:src="@{/img/red-de-computadoras.png}" />
+				<span class="logo_name">CORTESOFT</span>
+			</div>
+			<ul class="nav-links">
+				<li>
+					<a href="#">
+						<i class='bx bx-power-off'></i>
+						<span class="links_name">BIENVENIDO</span>
+					</a>
+				</li>
+				<li>
+					<a href="REGISTRO PRODUCTO.html">
+						<i class='bx bxs-basket'></i>
+						<span class="links_name">REGISTRO PRODUCTOS</span>
+					</a>
+				</li>
+				<li>
+					<a href="FACTURACION.html">
+						<i class='bx bxs-file-txt'></i>
+						<span class="links_name">FACTURACION</span>
+					</a>
+				</li>
+				<li>
+					<a href="PAGOS A REALIZAR.html">
+						<i class='bx bx-money-withdraw'></i>
+						<span class="links_name">PAGOS A REALIZAR</span>
+					</a>
+				</li>
+				<li>
+					<a href="STOCK MATERIALES.html">
+						<i class='bx bx-detail'></i>
+						<span class="links_name">MATERIAL</span>
+					</a>
+				</li>
+				<li>
+					<a href="ADMINISTRAR USUARIOS.html">
+						<i class='bx bx-group'></i>
+						<span class="links_name">ADMINISTRAR USUARIO</span>
+					</a>
+				</li>
+				<li>
+					<a href="EDITAR CERTIFICADOS.html">
+						<i class='bx bx-task'></i>
+						<span class="links_name">CERTIFICACION</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class='bx bx-message'></i>
+						<span class="links_name">MENSAJES</span>
+					</a>
+				</li>
+				<li>
+					<a href="PAGINA DE VENTAS.html">
+						<i class='bx bxl-google'></i>
+						<span class="links_name">PAGINA WEB</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<section class="home-section">
+			<nav class="navbar">
+
+				<div class="search-box">
+					<input type="text" placeholder="BUSCAR...">
+					<i class='bx bx-search'></i>
+				</div>
+				<div class="profile-dropdown">
+					<div onclick="toggle()" class="profile-dropdown-btn">
+						<img th:src="@{/img/admin.jpg}" class="navbar-logo" alt="logo" />
+						<div class="profile-img">
+							<i class="fa-solid fa-circle"></i>
+						</div>
+
+						<span>
+							URIEL
+							<i class='bx bxs-down-arrow'></i>
+						</span>
+					</div>
+
+					<ul class="profile-dropdown-list">
+						<li class="profile-dropdown-list-item">
+							<a href="#">
+								<i class='bx bx-reset'></i>
+								EDITAR PERFIL
+							</a>
+						</li>
+
+						<li class="profile-dropdown-list-item">
+							<a href="MI CUENTA.html">
+								<i class='bx bx-user'></i>
+								MI CUENTA
+							</a>
+						</li>
+
+						<li class="profile-dropdown-list-item">
+							<a href="CERTIFICADO.html">
+								<i class='bx bxs-file-doc'></i>
+								CERTIFICADO
+							</a>
+						</li>
+
+						<li class="profile-dropdown-list-item">
+							<a href="#">
+								<i class='bx bx-reset'></i>
+								CONFIGURACION
+							</a>
+						</li>
+
+						<li class="profile-dropdown-list-item">
+							<a href="#">
+								<i class='bx bx-help-circle'></i>
+								AYUDA
+							</a>
+						</li>
+						<hr />
+
+						<li class="profile-dropdown-list-item">
+							<a href="#">
+								<i class='bx bx-log-out'></i>
+								CERRAR SESION
+							</a>
+						</li>
+					</ul>
+				</div>
+
+
+				</div>
+			</nav>
+
+			<div class="home-content">
+				<div class="overview-boxes">
+					<div class="box">
+						<div class="right-side">
+							<div class="box-topic">GASTO MATERIAL</div>
+							<div class="number">40,876</div>
+							<div class="indicator">
+								<i class='bx bx-up-arrow-alt'></i>
+								<span class="text">DATOS DE HOY</span>
+							</div>
+						</div>
+						<i class='bx bx-cart-alt cart'></i>
+					</div>
+					<div class="box">
+						<div class="right-side">
+							<div class="box-topic">TOTAL COMPRAS</div>
+							<div class="number">38,876</div>
+							<div class="indicator">
+								<i class='bx bx-up-arrow-alt'></i>
+								<span class="text">DATOS DE HOY</span>
+							</div>
+						</div>
+						<i class='bx bxs-cart-add cart two'></i>
+					</div>
+					<div class="box">
+						<div class="right-side">
+							<div class="box-topic">Total ENTRADAS</div>
+							<div class="number">$12,876</div>
+							<div class="indicator">
+								<i class='bx bx-up-arrow-alt'></i>
+								<span class="text">DATOS DE HOY</span>
+							</div>
+						</div>
+						<i class='bx bx-cart cart three'></i>
+					</div>
+					<div class="box">
+						<div class="right-side">
+							<div class="box-topic">TOTAL PERDIDAS</div>
+							<div class="number">11,086</div>
+							<div class="indicator">
+								<i class='bx bx-down-arrow-alt down'></i>
+								<span class="text">DATOS DE HOY</span>
+							</div>
+						</div>
+						<i class='bx bxs-cart-download cart four'></i>
+					</div>
+				</div>
+				<div class="sales-boxes">
+					<div class="recent-sales box">
+						<div class="title">REGISTROS USUARIOS</div>
+						<div class="sales-details">
+
+							<table class="table table-striped table-bordered">
+								<thead class="table-dark">
+									<tr>
+										<th>ID</th>
+										<th>Nombre</th>
+										<th>Apellido</th>
+										<th>Email</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr th:each="usuario : ${usuarios}">
+										<td th:text="${usuario.id_Usuario}">ID</td>
+										<td th:text="${usuario.nombre}">ID</td>
+										<td th:text="${usuario.apellido}">ID</td>
+										<td th:text="${usuario.email}">ID</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="top-sales box">
+						<div class="title">PRODUCTOS DISPONIBLES</div>
+						<ul class="top-sales-details">
+							<li>
+								<a href="#">
+									<img src="images/CHAQUETA COLUMBIA.jpg" alt="">
+									<span class="product">CHAQUETA COLUMBIA</span>
+								</a>
+								<span class="price">$300.999</span>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/CAMISA AC MILAN.jpg" alt="">
+									<span class="product">CAMISA AC MILAN</span>
+								</a>
+								<span class="price">$150.000</span>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/CHAQUETA ROSADAjpg.jpg" alt="">
+									<span class="product">CHAQUETA MUJER ROSADA</span>
+								</a>
+								<span class="price">$250.000</span>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/CHAQUETA AZUL.jpg" alt="">
+									<span class="product">CHAQUETA NIÑO AZUL</span>
+								</a>
+								<span class="price">$230.000</span>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/CAMISA NEGRA.jpg" alt="">
+									<span class="product">CAMISA NEGRA HOMBRE</span>
+								</a>
+								<span class="price">$140.000</span>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/CHAQUETA AZUL.jpg" alt="">
+									<span class="product">CHAQUETA COLUMBIA AZUL</span>
+								</a>
+								<span class="price">$300.999</span>
+							<li>
+								<a href="#">
+									<img src="images/camisa amarilla.jpg" alt="">
+									<span class="product">CAMISA MUJER AMARILLA</span>
+								</a>
+								<span class="price">$200.000</span>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/chaqueta columbia mujer.jpg" alt="">
+									<span class="product">CHAQUETA COLUMBIA MUJER</span>
+								</a>
+								<span class="price">$240.000</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script type="text/javascript" th:src="@{/js/Nav_scriptUser.js}"></script>
+		<script>
+			let sidebar = document.querySelector(".sidebar");
+			let sidebarBtn = document.querySelector(".sidebarBtn");
+			sidebarBtn.onclick = function () {
+				sidebar.classList.toggle("active");
+				if (sidebar.classList.contains("active")) {
+					sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+				} else
+					sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+			}
+		</script>
+</main>
+</body>
+
+</html>
